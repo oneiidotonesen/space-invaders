@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<style>
+	body {
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: black;
+		font-family: System Bold; font-size: 28px;
+	}
+
+</style>
+
+
+<div style="position: relative;" id="parentDiv">
+	<p
+      id="scoreContainer"
+      style="
+         position: absolute;
+         z-index: 10;
+         color: white;
+         left: 10px;
+         top: 10px;
+         margin: 0;
+         display: none;"
+
+>
+  <span>Score:</span> <span id="scoreEl">0</span>
+</p>
+ <canvas></canvas>
+ <!-- background container-->
+ <div
+  id="startScreen"                                                                                                             
+  style="
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('./img/spaceinvaderUI.jpg');
+    z-index: 20;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    "
+    >
+    
+    <div id="startButton" style="cursor: pointer">
+      <img src="./img/play_normal.png"
+       alt="Start Button"
+       style="position: absolute; top: 55%; left: 25%;"/>
+
+       </div>
+    	
+
+    </div>
+
+
+    
+</div>
+
+<!-- restart screen --->
+    <!-- background container-->
+ <div
+  id="restartScreen"                                                                                                             
+  style="
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('./img/spaceinvaderUI.jpg');
+    display: none;
+    z-index: 20;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    "
+    >
+
+    <div id="restartButton" style="cursor: pointer">
+      <img src="./img/replay_normal.png"
+       alt="Restart Button"
+       style="position: absolute; top: 55%; left: 25%;"/>
+
+       </div>
+      
+
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js" integrity="sha512-xi/RZRIF/S0hJ+yJJYuZ5yk6/8pCiRlEXZzoguSMl+vk2i3m6UjUO/WcZ11blRL/O+rnj94JRGwt/CHbc9+6EA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="./audio.js"></script>
+<script src="./js/classes.js"></script>
+<script src="./index.js"></script>
+
+
+
+
+	</html>
+	
